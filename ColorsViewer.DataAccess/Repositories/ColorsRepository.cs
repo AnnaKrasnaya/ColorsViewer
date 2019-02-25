@@ -8,9 +8,16 @@ namespace ColorsViewer.DataAccess.Repositories
 {
     public class ColorsRepository : IColorsRepository
     {
+        public ColorsRepository(string connectionString)
+        {
+            ConnectionString = connectionString;
+        }
+
+        private string ConnectionString { get; }
+
         public IEnumerable<ColorsDTO> GetColors(int colorsNumber)
         {
-            using (var context = new ApplicationContext())
+            using (var context = new ApplicationContext(ConnectionString))
             {
                 return context.Colors
                     .Join(context.Items,
