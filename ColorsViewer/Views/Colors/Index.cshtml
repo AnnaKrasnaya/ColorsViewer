@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">   
+    <div class="form-group">
+        Please, choose the number of colors to be shown.
+        <input id="colorsNumber" type="text" class="form-control">
+        <label id="wrongNumberError" class="hidden has-error">Number of colors can not be empty and has to be a numeric value</label>
+    </div>
+    <button class="btn btn-primary" id="createBtn">Create</button>
+    <button class="btn btn-default" id="revertBtn">Revert</button>
+
+    @Html.Hidden("CreateUrl", Url.Action("GetColors"))
+</div>
+
+<div id="colorsDiv"></div>
+

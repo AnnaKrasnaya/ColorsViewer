@@ -1,0 +1,13 @@
+﻿@model IEnumerable<ColorsViewer.Models.ColorModel>
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-lg-4 col-md-6 col-sm-12 colorItem">
+                <div class="box" style="background-color: @item.ColorCode"></div>
+                <div class="text-left">@item.Name</div>
+            </div>
+        }
+    </div>
+</div>
