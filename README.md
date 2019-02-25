@@ -12,3 +12,8 @@ Colors are loaded asynchronously using vanilla js (ES5).
 Colors sorting is implemented in the GetColors action.
 NUnit and Moq are used for unit tests.
 
+# Installation notes #
+- clone repository
+- open in VS
+- ensure that ColorsViewer is startup project (left mouse button on solution -> Select startup project -> ColorsViewer in Single startup project oprion)
+- build and run solution
