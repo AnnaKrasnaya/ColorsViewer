@@ -5,7 +5,7 @@ ColorsViewer solution consists of 4 projects:
 3) ColorsViewer.Tests contains unit tests
 4) ColorsViewer is MVC projects
 
-Predefined color scheme is stored in SQLite and accessed with EF6. File with database is located in the Data folder of MVC project.
+Predefined color scheme is stored in SQLite and accessed with EF6. File with database is located in the Data folder of MVC project. There are 20 colors and items in database file initially.
 All requests to data access and service layers are made with Linq2EF.
 Autofac is used as IOC for DI.
 Colors are loaded asynchronously using vanilla js (ES5).
